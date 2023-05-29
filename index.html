@@ -15,17 +15,22 @@
         Etch A Sketch
     </h1>
     <div class="header flex  justify-around px-8 py-2">
-        <h6>Select the size</h6>
-        <button class="btn-primary" id="popup">Select</button>
+        <div class="mt-4">
+            <input type="range" class="w-full appearance-none bg-gray-400 h-2 rounded-full" min="6" max="100" value="6"
+                step="6" id="range-slider">
+            <label for="range-slider" class="block text-center mt-2" id="range-label">6 X 6</label>
+        </div>
+
     </div>
-    <div
-        class="  w-[92%] h-[400px] grid border-solid border-black border-[2px] py-[20px] ml-[20px]   ">
+    <div class="flex justify-center items-center h-screen">
+        <div class="customeBorder"></div>
     </div>
     <div class="footer text-center flex justify-around px-3 py-8">
-        <button class="btn-primary">Black</button>
-        <button class="btn-secondary">Random</button>
-        <button class="btn-danger">Reset</button>
+        <button class="btn-primary" onclick="setColor('black')">Black</button>
+        <button class="btn-secondary" onclick="setColor('random')" >Random</button>
+        <button class="btn-danger" onclick="reset()">Reset</button>
     </div>
 </body>
 <script src="main.js"></script>
+
 </html>

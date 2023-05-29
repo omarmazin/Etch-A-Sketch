@@ -13,3 +13,11 @@
   }
 
 }
+@layer utilities  {
+  .customeBorder {
+    width:92%;
+    height:400px;
+    display: grid;
+    border: 1px solid black;
+  }
+}
